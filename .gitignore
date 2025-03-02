@@ -1,4 +1,9 @@
 node_modules
 dist
+.env
 .env.*
 .DS_Store
+
+prisma/dev.db
+prisma/dev.db-journal
+prisma/.DS_Store

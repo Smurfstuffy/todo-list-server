@@ -1,11 +1,8 @@
+/* eslint-disable no-console */
 import {z} from 'zod';
 import dotenv from 'dotenv';
 
-const envFile =
-  process.env.NODE_ENV === 'production'
-    ? '.env.production'
-    : '.env.development';
-dotenv.config({path: envFile});
+dotenv.config();
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production']).default('development'),
