@@ -25,7 +25,7 @@ export default [
       'no-unused-vars': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
-      '@typescript-eslint/strict-boolean-expressions': 'warn',
+      '@typescript-eslint/strict-boolean-expressions': 'off',
       '@typescript-eslint/no-non-null-assertion': 'warn',
     },
   },
