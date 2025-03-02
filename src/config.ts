@@ -8,6 +8,8 @@ const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production']).default('development'),
   PORT: z.string().default('8080').transform(Number),
   DATABASE_URL: z.string().min(1, 'DATABASE_URL is required'),
+  ACCESS_SECRET: z.string().min(1, 'ACCESS_SECRET is required'),
+  REFRESH_SECRET: z.string().min(1, 'REFRESH_SECRET is required'),
 });
 
 const parsedEnv = envSchema.safeParse(process.env);
